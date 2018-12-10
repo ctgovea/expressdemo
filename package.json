@@ -7,5 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Carlos Torres",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "2.4.1",
+    "debug": "4.1.0",
+    "express": "^4.16.4",
+    "morgan": "1.9.1"
+  }
 }
