@@ -4,6 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
+    "start": "set DEBUG=app & node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Carlos Torres",
@@ -16,5 +17,10 @@
     "jquery": "3.3.1",
     "morgan": "1.9.1",
     "popper": "1.0.1"
+  },
+  "devDependencies": {
+    "eslint": "5.10.0",
+    "eslint-config-airbnb-base": "13.1.0",
+    "eslint-plugin-import": "2.14.0"
   }
 }
