@@ -5,6 +5,14 @@ const debug = require('debug')('app:bookRoutes');
 const bookRouter = express.Router();
 
 function router(nav) {
+  bookRouter.use((req, res, next) => {
+    // If there is an user object, the user has logged in.
+    if (req.user) {
+      next();
+    } else {
+      res.redirect('/');
+    }
+  });
   bookRouter.route('/')
     .get((req, res) => {
       const url = 'mongodb://127.0.0.1:27017';
